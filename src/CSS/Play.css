@@ -1,0 +1,20 @@
+.playson-game-panel {
+    margin: 23px;
+}
+
+.path {
+    display: flex;
+    align-items: center;
+}
+
+.path>span {
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+
+.playson-game-panel>.game {
+    width: 80%;
+    height: 39.5rem;
+    margin: 46px 0;
+}

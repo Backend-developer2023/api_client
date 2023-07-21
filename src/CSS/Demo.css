@@ -1,0 +1,351 @@
+.Demo-game-panel {
+    display: flex;
+    margin: 23px;
+}
+
+@media screen and (max-width:730px) {
+    .Demo-game-panel {
+        margin: 0;
+    }
+}
+
+/* Page address Path  */
+.path {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:730px) {
+    .leftContent>.path {
+        display: none;
+    }
+
+}
+
+/* Extra Games Options  */
+.Extra-gameOpts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width:730px) {
+    .Extra-gameOpts {
+        display: none;
+    }
+
+}
+
+.Extra-gameOpts button {
+    font-size: 10px;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.Extra-gameOpts>.Btns>.demoPlay-Btn {
+    background: #794DFD;
+    color: white;
+}
+
+.play-for-money-Btn {
+    background: #FFD600;
+    color: black;
+    font-weight: bold;
+    padding: 0;
+}
+
+.play-for-money-Btn a {
+    padding: 12px 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.play-for-money-Btn span {
+    padding: 12px 0;
+}
+
+.Extra-gameOpts>.Opts {
+    display: flex;
+    align-items: center;
+}
+
+.Extra-gameOpts>.Opts span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2B2B2B;
+    color: #737373;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.Extra-gameOpts>.Opts span:hover {
+    color: white;
+}
+
+.closeDemo {
+    color: #737373;
+}
+
+.closeDemo:hover {
+    color: white;
+}
+
+
+.Demo-game-panel>.leftContent>.Demogame {
+    display: flex;
+    height: 38.5rem;
+    width: 100%;
+    margin: 55px 0;
+    position: relative;
+}
+
+@media screen and (max-width:730px) {
+    .Demo-game-panel>.leftContent>.Demogame {
+        margin: 0;
+    }
+}
+
+#game-container {
+    display: flex;
+    width: 100% !important;
+    height: 100%;
+    border: none;
+}
+
+.Demo-game-panel>.leftContent {
+    position: relative;
+    width: 80%;
+}
+
+@media screen and (max-width:1200px) {
+    .Demo-game-panel>.leftContent {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.Demo-game-panel>.rightContent {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 8px;
+}
+
+/* Demo game container  */
+
+.Demogame>.closeFullScreen {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    z-index: +6;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+
+.Demogame>.loading-bar {
+    background: #0000002b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: last baseline;
+    border-radius: 4px;
+    position: absolute;
+    justify-content: center;
+}
+
+.Demogame>.loading-bar>.loading-spinner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    width: 60%;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    font-family: sans-serif;
+    background: #00000052;
+    padding: 10px;
+    border-radius: 10rem;
+}
+
+.Mob-play-for-money-Btn {
+    display: flex;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+    height: 33px;
+    background: #794DFD;
+    box-shadow: 1px 1px 4px 8px rgba(142, 53, 255, 0.24);
+    border-radius: 4px;
+    margin: 16px auto;
+    padding: 0 16px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mob-play-for-money-Btn>span {
+    display: flex;
+    align-items: center;
+}
+
+.Mob-play-for-money-Btn>span>img {
+    height: 28px;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 730px) {
+    .Mob-play-for-money-Btn {
+        display: none;
+    }
+
+}
+
+
+
+/* Right Content  */
+@media screen and (max-width:1200px) {
+    .Demo-game-panel>.rightContent {
+        display: none;
+    }
+}
+
+.searchGames {
+    display: flex;
+    align-items: center;
+    padding: 14px 17px;
+    background: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+}
+
+.searchGames>input {
+    color: white;
+    width: 80%;
+    margin: 5px;
+    background: no-repeat;
+    border: none;
+    outline: none;
+}
+
+/* .related-games>span {
+    display: flex;
+    align-items: center;
+    padding: 14px 17px;
+    background: black;
+    margin: 4px 0;
+    color: white;
+} */
+
+/* .related-games-list .mySwiper {
+    margin-left: 0;
+    width: 100%;
+}
+
+.related-games-list .swiper-container .related-game>img {
+    width: 160px;
+    height: 110px;
+} */
+
+.rightTabs {
+    background: palevioletred;
+}
+
+.Demo-game-panel>.rightContent>.right-tabs>.right-tab-frame {
+    width: 100% !important;
+    padding: 8px !important;
+}
+
+.Demo-game-panel>.rightContent>.right-tabs>.right-tab-frame>h2 {
+    font-size: 18px !important;
+}
+
+.Demo-game-panel>.rightContent>.right-tabs>.right-tab-frame>ul>li>span {
+    font-size: 14px !important;
+}
+
+.Demo-game-panel>.rightContent>.right-tabs>.right-tab-frame>ul>li>button {
+    width: 68px;
+    height: 34px;
+    font-size: 12px;
+}
+
+/* Top Games  */
+.TopGames {
+    display: flex;
+    flex-direction: column;
+}
+
+.TopGames>span>.swiper-nav-btns {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+}
+
+.TopGames>span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    padding: 13px 16px;
+    margin: 10px 0;
+}
+
+.top-games-list .mySwiper {
+    margin-left: 0;
+    width: 100%;
+}
+
+.top-games-list .swiper-container .top-game>img {
+    width: 160px;
+    height: 110px;
+}
+
+/* Event Card  */
+
+.EventCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.EventHeader {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.EventHeader img {
+    width: 100%;
+}
+
+.EventHeader span {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    background: #454545;
+    color: #FFD600;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 10px;
+}

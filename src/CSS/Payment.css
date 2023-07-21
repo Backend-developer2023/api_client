@@ -1,0 +1,139 @@
+.paymentPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b5;
+    z-index: +2;
+}
+
+.close-paymentBox{
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+.payment-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #20143A;
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    z-index: +2;
+}
+
+.bonusPts {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: #6329C2;
+    height: 6rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.bonusPts img {
+    width: 72px;
+    height: 72px;
+    margin-right: 25px;
+}
+
+.bonusPts-text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 50%;
+    right: 2%;
+    margin-left: 25px;
+}
+
+.bonusPts-text :nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bonusPts-text :nth-child(2) {
+    font-size: 10px;
+}
+
+.paymentCompany{
+    width: 90%;
+    background: white;
+    padding: 20px 4px;
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+    border-radius: 10px;
+}
+.paymentCompany img{
+    width: 80px;
+}
+
+.sum{
+    display: flex;
+    width: 90%;
+    color: #606072;
+    font-size: 12px;
+    margin: 4px 0;
+}
+.payment-box>input {
+    width: 90%;
+    height: 29px;
+    outline: none;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}
+
+.quickPaymentOpts {
+    width: 90%;
+    padding: 10px 0;
+}
+
+.quickPaymentOpts span {
+    background: #454545;
+    color: white;
+    padding: 2px 4px;
+    font-size: 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.payment-box>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #794DFD;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 41px;
+    width: 131px;
+}
+.box-footer{
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 12px 0;
+    font-size: 10px;
+}
+.box-footer :nth-child(1){
+    color: #787896;
+}
+.box-footer :nth-child(2){
+    position: absolute;
+    right: 0;
+}

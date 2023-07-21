@@ -1,0 +1,153 @@
+.achievements-data {
+    margin: 20px;
+    background: #20143A;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.achievements-data>h3 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 16px;
+}
+
+@media screen and (max-width:730px) {
+    .achievements-data>h3 {
+        font-size: 11px;
+        margin: 7px 9px;
+    }
+}
+
+.achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 8rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 196px;
+    height: 323px;
+    background: #40247E;
+    border-radius: 10px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:780px) {
+    .card {
+        width: 186px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width:730px) {
+    .card {
+        width: 120px;
+        height: 208px;
+        margin: 3px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .card {
+        width: 104px;
+        height: 190px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .card {
+        width: 100px;
+        height: 178px;
+    }
+
+}
+
+
+.card>img {
+    height: 135px;
+    margin-top: 57px;
+}
+
+@media screen and (max-width:730px) {
+    .card>img {
+        height: 84px;
+        margin-top: 29px;
+    }
+
+}
+
+.award-name {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Inter';
+    position: absolute;
+    bottom: 66px;
+    width: 143px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width:730px) {
+    .award-name {
+        font-size: 8px;
+        width: 77px;
+        bottom: 61px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .award-name {
+        bottom: 45px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .award-name {
+        bottom: 36px;
+    }
+
+}
+
+.base-bar {
+    width: 143px;
+    height: 10px;
+    background: #27272F;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 25px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:730px) {
+    .base-bar {
+        width: 92px;
+        height: 3px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .base-bar {
+        bottom: 20px;
+    }
+
+}
+
+.achievement-progress {
+    display: flex;
+    height: 100%;
+    /* width: 80%; */
+    border-radius: 5rem;
+    background: linear-gradient(90deg, #00A3FF 0%, #9747FF 0.01%, #1A73E8 52.08%, #FF00B8 100%);
+    border-radius: 3.58607px;
+}

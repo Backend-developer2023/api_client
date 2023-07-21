@@ -1,0 +1,30 @@
+.switch {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5rem;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    background: #B17CFF;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.switch>input {
+    width: 2rem;
+    position: absolute;
+    display: none;
+    z-index: +1;
+}
+
+.toggel-box {
+    background: white;
+    height: 100%;
+    width: 19px;
+    border-radius: 5rem;
+    position: absolute;
+    left: 20px;
+    transition: 0.5s all;
+}

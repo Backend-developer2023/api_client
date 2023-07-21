@@ -1,0 +1,23 @@
+.Alert {
+    background: white;
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    bottom: 0;
+    padding: 8px 16px;
+    max-width: 20rem;
+}
+.AlertMsg{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.Msg{
+    margin: 0 8px; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 85%;
+    overflow: hidden;
+}

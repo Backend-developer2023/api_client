@@ -1,0 +1,592 @@
+/* Initial progress window  */
+.initial-progress-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #20143A;
+    z-index: +10;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.initial-progress-window>.progress-window-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-window-box>.name-logo {
+    display: flex;
+    align-items: center;
+}
+
+.progress-window-box>.name-logo>img {
+    width: 103px;
+    height: 103px;
+}
+
+.progress-window-box>.name-logo>span {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 25px;
+}
+
+.loading-percentage {
+    display: flex;
+    align-items: center;
+}
+
+.loading-percentage>span {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.progressBar-holder {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 7px;
+    background: #27272F;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.progressBar-holder>.progressBar {
+    display: flex;
+    width: 0%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, #00A3FF 0%, #9747FF 0.01%, #1A73E8 52.08%, #FF00B8 100%);
+}
+
+@media screen and (max-width: 520px) {
+    .progress-window-box>.name-logo>img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .progress-window-box>.name-logo>span {
+        font-size: 30px;
+    }
+
+    .progressBar-holder {
+        width: 292px;
+    }
+}
+
+/* Slider  */
+.slider {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: max-content;
+    margin-top: 0;
+    justify-content: right;
+}
+
+@media screen and (min-width:1024px) {
+    .slider {
+        height: 355px;
+    }
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: +1;
+    position: absolute;
+    left: 74px;
+}
+
+.textContent>span {
+    font-size: 14px;
+    color: #7E7E7E;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    .textContent>span {
+        font-size: 12px;
+    }
+}
+
+.textContent h1 {
+    font-size: 32px;
+    width: 436px;
+}
+
+@media screen and (max-width: 800px) {
+    .textContent h1 {
+        font-size: 24px;
+        width: 336px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .textContent h1 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .textContent>span {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .textContent {
+        left: 25px;
+    }
+
+    .textContent>span {
+        display: none;
+    }
+
+    .textContent h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        width: 91px;
+        text-align: center;
+        margin-top: 6px;
+    }
+}
+
+.textContent h1 :nth-child(1) {
+    color: #794DFD;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: max-content;
+}
+
+.nav-btns span {
+    color: white;
+}
+
+.nav-btns :nth-child(2) {
+    margin-left: 32px;
+}
+
+@media screen and (max-width:730px) {
+    .nav-btns :nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+.nav-btns button {
+    background: #794DFD;
+    border: none;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-btns button:hover {
+    background: #6439e3;
+}
+
+
+@media screen and (max-width: 730px) {
+    .nav-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 7px;
+        padding: 7px 3.5px;
+        width: 91px;
+    }
+
+    .nav-btns button {
+        font-size: 7px;
+        padding: 7px 3.5px;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.headImg {
+    display: flex;
+    /* left: 279px;
+    max-width: 1161px; */
+    /* max-height: 80.6%; */
+    /* right: 0; */
+    max-width: 80.7%;
+}
+
+@media screen and (max-width: 730px) {
+    .headImg {
+        max-width: 100%;
+    }
+}
+
+.leftArrow,
+.rightArrow {
+    color: white;
+    z-index: +1;
+    cursor: pointer;
+}
+
+.leftArrow {
+    position: absolute;
+    left: 20px;
+}
+
+.rightArrow {
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (max-width: 730px) {
+
+    .leftArrow,
+    .rightArrow {
+        height: 12px;
+        width: 12px;
+    }
+
+    .leftArrow {
+        left: 8px;
+    }
+
+    .rightArrow {
+        right: 8px;
+    }
+}
+
+
+/* Wiiner List  */
+
+.winnerList {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 51px;
+}
+
+@font-face {
+    font-family: BigNoodleTitling;
+    src: url('../Fonts/bignoodletitlingrusbydaymarius.ttf') format('OpenType');
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    color: white;
+    margin: 0 8px;
+}
+
+
+.mySwiper {
+    display: flex;
+    width: 85%;
+    height: 94%;
+    color: white;
+}
+
+.winnerInfo {
+    display: flex;
+    color: white;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.swiper-wrapper {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+}
+
+.swiper-slide:hover .playBtn {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    width: 62px;
+    height: 43px;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+.trophy-icon {
+    width: 40px;
+    height: 38px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 730px) {
+
+    .content-box img {
+        width: 30px;
+        height: 28px;
+        margin-right: 4px;
+    }
+
+    .swiper-slide img {
+        width: 45px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}
+
+
+.content-box span {
+    font-size: 15px;
+    text-align: center;
+    width: 74px;
+    font-weight: 400;
+    font-family: BigNoodleTitling;
+}
+
+.content-box-text {
+    width: max-content;
+
+}
+
+@media screen and (max-width: 730px) {
+    .content-box span {
+        font-size: 10px;
+        width: 47px;
+    }
+}
+
+.content-box-text>span {
+    display: block;
+    font-size: 12px;
+    width: 98%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 730px) {
+    .content-box-text>span {
+        font-size: 10px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .content-box {
+        margin: 0 8px;
+    }
+
+    .content-box-text>span {
+        font-size: 8px;
+    }
+}
+
+.content-box-sub-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 6rem;
+    margin: 3px 0;
+}
+
+.content-box-sub-text :nth-child(1) {
+    font-size: 12px;
+}
+
+.content-box-sub-text :nth-child(2) {
+    font-size: 10px;
+    background: #454545;
+    color: #FFE923;
+    padding: 2px 4.5px;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .content-box-sub-text {
+        width: 4rem;
+    }
+
+    .content-box-sub-text :nth-child(1) {
+        font-size: 8px;
+    }
+
+    .content-box-sub-text :nth-child(2) {
+        font-size: 7px;
+    }
+
+}
+
+/* Play button  */
+
+.playBtn {
+    position: absolute;
+    background: #20143aa4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: +1;
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.playBtn button {
+    height: 34px;
+    font-size: 16px;
+    background: linear-gradient(180deg, #ffd600, #ffba00);
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.playBtn button:hover {
+    background: linear-gradient(180deg, #fee252, #ffc62b);
+}
+
+@media screen and (max-width: 420px) {
+    .playBtn button {
+        height: 27px;
+        font-size: 12px;
+    }
+}
+
+
+.games-and-tabs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.allGames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 76%;
+}
+
+/* Content-Options  */
+.game-filters {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    z-index: +1;
+}
+
+@media screen and (max-width: 730px) {
+    .game-filters {
+        display: flex;
+        justify-content: center;
+    }
+
+    .allGames {
+        max-width: 100%;
+    }
+}
+
+.game-filters button {
+    padding: 10px 16px;
+    cursor: pointer;
+    background: #794DFD;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+    .game-filters button {
+        font-size: 10px;
+    }
+
+    .game-filters select {
+        font-size: 10px;
+    }
+}
+
+.game-filters div {
+    display: flex;
+    align-items: center;
+    background: none;
+    color: white;
+    border: none;
+    margin: 0 16px;
+    cursor: pointer;
+
+}
+
+.games-and-tabs {
+    display: flex;
+    align-items: flex-start;
+}
+
+.Cate-filterArrow,
+.Prov-filterArrow {
+    transition: 0.3s all;
+}
+
+.filter-opts {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    height: max-content;
+    background: rgb(36, 37, 48);
+    margin: 0 16px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.2s all;
+    z-index: +2;
+    top: 60px;
+    position: absolute;
+}
+
+
+
+.filter-opt {
+    display: flex;
+    align-items: center;
+    margin: 16px 16px;
+    color: white;
+}
+
+@media screen and (max-width:420px) {
+    .filter-opt {
+        margin: 16px 8px;
+    }
+}
+
+.filter-opt span {
+    text-transform: uppercase;
+    margin-left: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:420px) {
+    .filter-opt span {
+        font-size: 10px;
+    }
+}
+
+/* Right Tabs  */
+.games-and-tabs .second-box {
+    display: none;
+}

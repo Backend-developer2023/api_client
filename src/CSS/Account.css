@@ -1,0 +1,477 @@
+ul.steps {
+    display: flex;
+    align-items: center;
+    background: #131420;
+    padding: 0 20px;
+}
+
+@media screen and (max-width:730px) {
+    ul.steps {
+        display: none;
+    }
+
+}
+
+.steps li {
+    color: #454545;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 19px 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media screen and (max-width:905px) {
+    .steps li {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width:730px) and (max-width:760px) {
+    .steps li {
+        font-size: 12px;
+    }
+
+}
+
+.personalAccountInfo {
+    display: grid;
+    grid-template-areas: 'Details Details Contact Contact';
+    row-gap: 27px;
+    column-gap: 30px;
+    margin: 27px;
+}
+
+.details {
+    grid-area: Details;
+    border-radius: 10px;
+}
+
+.contact {
+    grid-area: Contact;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 730px) {
+    .personalAccountInfo {
+        grid-template-areas: 'Details Details'
+            'Contact Contact';
+        margin: 15px;
+        row-gap: 6px;
+    }
+}
+
+.details,
+.contact {
+    display: flex;
+    flex-direction: column;
+    background: #20143A;
+    padding: 16px;
+}
+
+.details>h2,
+.contact>h2,
+.personalDetails h2 {
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width:730px) {
+
+    .details>h2,
+    .contact>h2,
+    .personalDetails h2 {
+        font-size: 11px;
+    }
+}
+
+.input-and-detals-holder {
+    display: flex;
+    align-items: center;
+    background: #2C1A53;
+    position: relative;
+    margin: 7px 0;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+@media screen and (max-width:730px) {
+    .input-and-detals-holder {
+        margin: 3px 0;
+        height: 33px;
+    }
+
+    .personalDetails .input-and-detals-holder {
+        margin: 5px 0;
+    }
+
+    .input-and-detals-holder>span {
+        margin: 8px 12px !important;
+        font-size: 8px;
+    }
+}
+
+
+.input-and-detals-holder>input {
+    display: flex;
+    width: 100%;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 17px 12px;
+    background: none;
+    z-index: +1;
+}
+
+@media screen and (max-width:730px) {
+    .input-and-detals-holder>input {
+        font-size: 8px;
+        padding: 11px 12px;
+    }
+}
+
+.availableInfo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+    z-index: +1;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 730px) {
+    .availableInfo {
+        right: 0%;
+    }
+}
+
+.availableInfo>select {
+    color: #606072;
+    font-size: 18px;
+    padding: 0 10px;
+    height: 100%;
+    border-radius: 10px;
+    width: 110px;
+}
+
+@media screen and (max-width: 730px) {
+    .availableInfo>select {
+        font-size: 10px !important;
+    }
+}
+
+.availableInfo>span {
+    color: #606072;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 730px) {
+    .availableInfo>img {
+        width: 14px !important;
+    }
+
+    .availableInfo>span {
+        font-size: 8px;
+    }
+}
+
+/* Date container  */
+.date-inp-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    z-index: +2;
+    width: 99%;
+    height: 97%;
+    /* border: 1px solid greenyellow; */
+    position: absolute;
+}
+
+/* .date-inp-holder>span {} */
+.date-inp-holder>input {
+    position: absolute;
+    width: 15px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* Personal Details  */
+.personalInfo-and-extra-details {
+    display: grid;
+    row-gap: 27px;
+    column-gap: 30px;
+    grid-template-areas: 'personalDetails extraDetails';
+}
+
+@media screen and (max-width: 730px) {
+    .personalInfo-and-extra-details {
+        display: block;
+    }
+}
+
+.personalDetails {
+    display: flex;
+    flex-direction: column;
+    /* color: white; */
+    background: #20143A;
+    padding: 16px;
+    margin: 27px;
+    grid-area: personalDetails;
+}
+
+@media screen and (max-width: 730px) {
+    .personalDetails {
+        margin: 16px;
+    }
+}
+
+.extraPersonalDetails {
+    grid-area: extraDetails;
+}
+
+.P-account-calender {
+    position: absolute;
+    z-index: +3;
+    top: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.saveBtn {
+    font-size: 18px;
+    background: #794DFD;
+    color: white;
+    padding: 11px 30px;
+    border: none;
+    border-radius: 5rem;
+    margin: 27px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 730px) {
+    .saveBtn {
+        display: flex;
+        font-size: 10px;
+        padding: 5px 20px;
+        border-radius: 4px;
+        margin: 25px auto;
+        margin-bottom: 5rem;
+    }
+}
+
+.saveBtn:hover {
+    background: #653be4;
+}
+
+/* Topup Account Section  */
+
+.topupAccountSection {
+    color: white;
+}
+
+.topupAccountSection>h1 {
+    margin: 20px;
+    font-size: 21px;
+}
+
+@media screen and (max-width: 730px) {
+    .topupAccountSection {
+        position: relative;
+        top: -73px;
+    }
+
+    .topupAccountSection>h1 {
+        display: none;
+    }
+
+    .depositeOpts>h2 {
+        display: none;
+    }
+}
+
+.depositeOpts {
+    display: flex;
+    flex-direction: column;
+    background: #20143A;
+    margin: 20px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:730px) {
+    .depositeOpts {
+        margin: 0;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: +2;
+        top: 60px;
+        height: 36rem;
+        padding-bottom: 4rem;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+}
+
+.paymentMethods {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: white;
+    width: 265px;
+    height: 92px;
+    border-radius: 10px;
+    margin-right: 56px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .company {
+        width: 256px;
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .company {
+        width: 186px;
+        margin-right: 16px;
+    }
+}
+
+.company img {
+    height: 35%;
+}
+
+.company .c-name {
+    color: #794DFD;
+    font-size: 13px;
+    position: absolute;
+    bottom: 4%;
+}
+
+@media screen and (max-width: 730px) {
+    .paymentMethods {
+        justify-content: center;
+        padding-bottom: 8rem;
+    }
+
+    .company {
+        width: 155px;
+        height: 94px;
+        margin-right: 8px;
+    }
+
+    .company img {
+        max-height: 22px;
+    }
+}
+
+/* Mobile Steps  */
+.mobile-steps {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 4px 0;
+    margin: 8px;
+}
+
+@media screen and (min-width:730px) {
+    .mobile-steps {
+        display: none;
+    }
+}
+
+.mobile-steps>li {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    margin: 0 10px;
+    color: white;
+    /* border-bottom: 2px solid #794DFD; */
+    white-space: nowrap;
+    padding: 6px 0;
+}
+
+.mobile-steps>li>img {
+    margin-bottom: 8px;
+}
+
+/* React Date Picker  */
+
+.date-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: +3;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+}
+.react-datepicker__header{
+    background: white !important;
+    border-bottom: none !important;
+}
+.react-datepicker__input-container {
+    height: 100% !important;
+}
+
+.react-datepicker__input-container input {
+    height: 100% !important;
+    width: 100% !important;
+    opacity: 0 !important;
+}
+
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+    left: -22px !important;
+}
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+    left: -26px !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+    color: #1E202C !important;
+    font-size: 22px !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+    background-color: #4D74FF !important;
+    color: white !important;
+}
+
+.react-datepicker__day-name{
+    font-size: 16px !important;
+    color: #A6ACC4 !important;
+    font-weight: 500 !important;
+}
+.datepicker__day{
+    font-size: 16px !important;
+}
+.react-datepicker__navigation-icon::before {
+    border-color: #1E202C !important;
+    height: 4px !important;
+    top: 12px !important;
+    width: 4px !important;
+}

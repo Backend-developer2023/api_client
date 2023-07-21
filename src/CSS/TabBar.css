@@ -1,0 +1,151 @@
+.tabBar-window {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    background: rgba(76, 76, 76, 0.168);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    position: fixed;
+    z-index: +5;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.close-tabBar-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(128, 128, 128, 0.441); */
+}
+
+
+.tabBar {
+    position: fixed;
+    width: 241px;
+    background: #131420;
+    top: 60px;
+    right: 0;
+    height: 34rem;
+    z-index: +5;
+    animation: tabBar 0.3s ease-in-out forwards;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+@keyframes tabBar {
+    from {
+        right: -20rem;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.detail-menu-header {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.tabBar .user-info {
+    display: flex;
+    flex-direction: column;
+    margin: 8px auto;
+    width: 200px;
+    position: relative;
+}
+
+
+.tabBar .user-info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #794DFD;
+    color: white;
+    border-radius: 4px;
+    width: 46px;
+    height: 15px;
+    position: absolute;
+    right: 2%;
+    font-size: 6px;
+    border: none;
+}
+
+.tabBar .navlink {
+    font-size: 11px;
+    margin: 35px 0;
+}
+
+/* .navlink-icon {
+    color: #27272F;
+} */
+
+
+.strike-mode-progress-mob {
+    display: flex;
+    flex-direction: column;
+    background: #61479B;
+    border: 1px solid #20143A;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: 200px;
+    height: 63px;
+    margin-top: 14px;
+}
+
+.strike-mode-header-mob>span {
+    font-size: 9px;
+}
+
+.strike-mode-header-mob {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    position: relative;
+}
+
+.strike-mode-header-mob>span {
+    font-weight: bold;
+    color: white !important;
+}
+
+.progress {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar-mob {
+    display: flex;
+    width: 181px;
+    background: #27272F;
+    height: 3px;
+    border-radius: 2rem;
+    margin: 24px auto;
+    position: relative;
+}
+
+.userProgress-mob {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 131px;
+    background: linear-gradient(90deg, #00A3FF 0%, #9747FF 0.01%, #1A73E8 52.08%, #FF00B8 100%);
+    border-radius: 3.58607px;
+}
+
+.milestone-in-month-mob {
+    display: flex;
+    width: 181px;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabBar nav {
+    padding: 0 16px;
+}
+

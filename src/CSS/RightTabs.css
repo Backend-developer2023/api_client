@@ -1,0 +1,94 @@
+@media screen and (max-width: 730px) {
+    .right-tabs {
+        display: none;
+    }
+}
+
+.right-tab-frame {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 314px;
+    height: 394px;
+    background: #131420;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+
+}
+
+ul li .tab-img-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 46px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-tabs ul li span {
+    margin-left: 10px;
+    margin-left: 10px;
+    width: 42%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+ul li button {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    width: 76px;
+    height: 42px;
+    padding: 10px 5px;
+    cursor: pointer;
+    background: #794DFD;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+ul::-webkit-scrollbar-thumb {
+    background: #794DFD;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+ul::-webkit-scrollbar-thumb:hover {
+    background: #9370fd;
+}
